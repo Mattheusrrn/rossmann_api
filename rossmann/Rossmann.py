@@ -8,7 +8,7 @@ import json
 
 class Rossmann(object):
     def __init__(self):
-        self.home_path = '/home/mattheus/Rossmann/'
+        self.home_path = ''
         self.encoding_competition_distance_scaler   = pickle.load( open(self.home_path + 'parameter/encoding_competition_distance_scaler.pkl','rb'))
         self.encoding_competition_time_month        = pickle.load( open(self.home_path + 'parameter/encoding_competition_time_month.pkl','rb'))
         self.encoding_promo_time_week               = pickle.load( open(self.home_path + 'parameter/encoding_promo_time_week.pkl','rb'))
