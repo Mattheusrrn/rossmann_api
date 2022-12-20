@@ -50,3 +50,46 @@ Para conduzir o projeto, utilizei as etapas do CRISP:
 7. *Machine Learning*; 
 8. Avaliação dos modelos de *Machine Learning*; e
 9. *Deploy* do Modelo escolhido. 
+
+# 05. Hipóteses de Negócio
+Entre as 09 hipóteses de negócio levantadas e analisadas, as 03 que considero principais foram: 
+1. As lojas com competidores muito próximos vendem mais do que as lojas com competidores mais distantes; 
+2. As lojas com menor sortimento (mix de produtos), na média, vendem mais do que as lojas com maior sortimento; e
+3. As lojas vendem mais depois do dia 10 de cada mês.
+
+# 06. *Machine Learning*
+Para fazer a previsão de vendas, utilizei 05 algoritmos de Machine Learning: 
+- *Average Model*
+- *Linear Regression*
+- *Linear Regression Regularized*
+- *Random Forest Regressor*
+- *XGBoost Regressor*
+
+Após fazer o treinamento dos modelos sobre os dados de treino e ter feito o Cross-Validation, bem como analisar o erro através do MAE, MAPE e RMSE, optei por usar o XGBoost Regressor.
+
+Depois de realizar o *hyperparemeter fine tunning*, os resultados de erro foram: 
+
+|         Modelo          |  MAE   |  MAPE  | RMSE    |
+| :---------------------: | :---:  | :---:  | :-----: |
+|    XGBoost Regressor    | 881.45 | 0.13   | 1283.47 |
+
+# 07. Bot no Telegram
+Demonstração da interação com o Bot para verificar a previsão de vendas por loja:
+![rossman_bot](https://user-images.githubusercontent.com/97055919/203369108-60f55b16-77ce-408a-9b86-45655121ee25.jpeg)
+
+# 08. Conclusões
+Feita a previsão de vendas por loja para as próximas 06 semanas, a interação com o Bot no Telegram permite que o CFO consulte o valor das vendas pelo celular onde quer que esteja, facilitando a definição do orçamento para a reforma de cada loja. 
+
+Ainda, as hipóteses levantadas e validadas na Análise Exploratória de Dados também trazem informações importantes para a tomada de decisões e forma de condução de negócios.
+
+# 09. Próximos Passos
+Em um próximo ciclo do CRISP, posso: 
+- Coletar mais dados e adotar novas premissas de negócio;
+- Realizar o preenchimento de valores faltantes de outra forma; 
+- Testar outros algoritmos de *Machine Learning*;
+- Utilizar outra estratégia para o *Hyperparemeter Fine Tunning* (ex.: *Bayesian Search*); e 
+- Melhorar o funcionamento do Bot no Telegram.
+
+# Referências
+- Conjunto de Dados: https://www.kaggle.com/competitions/rossmann-store-sales
+- Descrição do Conjunto de Dados: https://www.kaggle.com/competitions/rossmann-store-sales/data
