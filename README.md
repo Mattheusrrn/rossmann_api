@@ -11,11 +11,7 @@ A Rossmann é uma rede de farmácias com 3.000 lojas em 07 países da Europa. Du
 
 Como Cientista de Dados da companhia, fui encarregado de elaborar essa previsão de vendas, e informarei ao CFO a previsão de vendas de cada loja através de um Bot no Telegram. 
 
-# 02. Resultados Financeiros
-O Modelo de Machine Learning adotado previu um cenário-base com uma receita bruta consolidada de € 281.083.520,00 para as próximas 06 semanas. No pior cenário, a receita bruta consolidada será de € 280.098.063,00, e no melhor cenário, € 282.068.968,00, tendo como base o MAE (*Mean Absolute Error*) do modelo. 
-
-# 03. Premissas de Negócio
-- O conjunto de dados contém as vendas realizadas entre 01/01/2013 e 31/07/2015;
+# 02. Premissas de Negócio
 - As variáveis/atributos originais (e seus significados) do conjunto de dados são:
 
 |    Atributos    |                         Significado                          |
@@ -39,7 +35,7 @@ O Modelo de Machine Learning adotado previu um cenário-base com uma receita bru
 |     promo2_since_year     |indica o ano que a loja começou a participar da promo2 (complementar à promo2_since_week)    |
 |       promo_interval       |descreve os intervalos consecutivos que a promo2 começou, indicando os meses que a promoção começou novamente (Ex.: "Feb,May,Aug,Nov" significa que cada intervalo começou em Fevereiro, Maio, Agosto e Novembro em determinado ano para determinada loja)                           |
 
-# 04. Etapas do Projeto
+# 03. Etapas do Projeto
 Para conduzir o projeto, utilizei as etapas do CRISP:
 1. Entender o problema de negócio apresentado pelo CFO; 
 2. Entender o modelo de negócio da Rossmann; 
@@ -51,14 +47,14 @@ Para conduzir o projeto, utilizei as etapas do CRISP:
 8. Avaliação dos modelos de *Machine Learning*; e
 9. *Deploy* do Modelo escolhido. 
 
-# 05. Hipóteses de Negócio
-Entre as 09 hipóteses de negócio levantadas e analisadas, as 03 que considero principais foram: 
-1. As lojas com competidores muito próximos vendem mais do que as lojas com competidores mais distantes; 
-2. As lojas com menor sortimento (mix de produtos), na média, vendem mais do que as lojas com maior sortimento; e
-3. As lojas vendem mais depois do dia 10 de cada mês.
+# 04. Hipóteses de Negócio
+Entre as 11 hipóteses de negócio levantadas e analisadas, as 03 que considero principais foram: 
+1. As lojas com competidores a mais tempo vendem menos.
+2. As lojas que abrem no Natal vendem mais.
+3. As lojas vendem mais no segundo semestre do ano.
 
-# 06. *Machine Learning*
-Para fazer a previsão de vendas, utilizei 05 algoritmos de Machine Learning: 
+# 05. *Machine Learning*
+Para fazer a previsão de vendas, foi utilizado 05 algoritmos de Machine Learning: 
 - *Average Model*
 - *Linear Regression*
 - *Linear Regression Regularized*
@@ -69,26 +65,28 @@ Após fazer o treinamento dos modelos sobre os dados de treino e ter feito o Cro
 
 Depois de realizar o *hyperparemeter fine tunning*, os resultados de erro foram: 
 
-|         Modelo          |  MAE   |  MAPE  | RMSE    |
-| :---------------------: | :---:  | :---:  | :-----: |
-|    XGBoost Regressor    | 881.45 | 0.13   | 1283.47 |
+|         Modelo          |     MAE    |    MAPE   |    RMSE    |
+| :---------------------: | :--------: | :------:  | :--------: |
+|    XGBoost Regressor    | 690.077731 | 0.10261   | 990.781052 |
+
+# 06. Resultados Financeiros
+O Modelo de Machine Learning adotado previu um cenário-base com uma receita bruta consolidada de € 277,532,192.00 para as próximas 06 semanas. No pior cenário se usou o MAE,mean absolute error,e chegou se em uma receita bruta consolidada de € 276,758,401.30, e no melhor cenário, € 278,306,002.42.
 
 # 07. Bot no Telegram
 Demonstração da interação com o Bot para verificar a previsão de vendas por loja:
 ![rossman_bot](https://user-images.githubusercontent.com/97055919/203369108-60f55b16-77ce-408a-9b86-45655121ee25.jpeg)
 
 # 08. Conclusões
-Feita a previsão de vendas por loja para as próximas 06 semanas, a interação com o Bot no Telegram permite que o CFO consulte o valor das vendas pelo celular onde quer que esteja, facilitando a definição do orçamento para a reforma de cada loja. 
+A partir dessa previsão e o deployment no Telegram,será possível que o CFO consulte o valor das vendas pelo celular onde quer que esteja, facilitando a definição do orçamento para a reforma de cada loja. 
 
 Ainda, as hipóteses levantadas e validadas na Análise Exploratória de Dados também trazem informações importantes para a tomada de decisões e forma de condução de negócios.
 
 # 09. Próximos Passos
-Em um próximo ciclo do CRISP, posso: 
-- Coletar mais dados e adotar novas premissas de negócio;
+Em um próximo ciclo do CRISP, o que pode ser melhorado: ;
 - Realizar o preenchimento de valores faltantes de outra forma; 
 - Testar outros algoritmos de *Machine Learning*;
 - Utilizar outra estratégia para o *Hyperparemeter Fine Tunning* (ex.: *Bayesian Search*); e 
-- Melhorar o funcionamento do Bot no Telegram.
+- Aprimorar os resultados no Bot no Telegram.
 
 # Referências
 - Conjunto de Dados: https://www.kaggle.com/competitions/rossmann-store-sales
