@@ -1,5 +1,4 @@
 # rossmann_api
-# PA002_rossmann_sales_prediction
 Os objetivos desse projeto de Ciência de Dados são:
 
 - Realizar a Análise Exploratória de Dados (EDA) das vendas das lojas da Rossmann disponíveis no conjunto de dados;
