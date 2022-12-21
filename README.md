@@ -1,5 +1,6 @@
 # rossmann_api
 ![rossman](https://www.city-galerie-wolfsburg.de/fileadmin/user_upload/GLOBAL/brand_stores/logos/rossmann.jpg)
+
 Os objetivos desse projeto de Ciência de Dados são:
 
 - Realizar a Análise Exploratória de Dados (EDA) das vendas das lojas da Rossmann disponíveis no conjunto de dados;
