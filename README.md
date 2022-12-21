@@ -75,7 +75,7 @@ O Modelo de Machine Learning adotado previu um cenário-base com uma receita bru
 
 # 07. Bot no Telegram
 Demonstração da interação com o Bot para verificar a previsão de vendas por loja:
-![rossman_bot](https://user-images.githubusercontent.com/97055919/203369108-60f55b16-77ce-408a-9b86-45655121ee25.jpeg)
+![rossman_bot](https://github.com/Mattheusrrn/rossmann_api/blob/main/0ddecc82-359b-4cec-b802-34420d8b6f16.jpeg)
 
 # 08. Conclusões
 A partir dessa previsão e o deployment no Telegram,será possível que o CFO consulte o valor das vendas pelo celular onde quer que esteja, facilitando a definição do orçamento para a reforma de cada loja. 
