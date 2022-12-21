@@ -1,4 +1,4 @@
-# rossmann_api
+# Projeto Rossmann
 ![rossman](https://www.city-galerie-wolfsburg.de/fileadmin/user_upload/GLOBAL/brand_stores/logos/rossmann.jpg)
 
 Os objetivos desse projeto de Ciência de Dados são:
