@@ -10,7 +10,7 @@ Os objetivos desse projeto de Ciência de Dados são:
 # 01. Problema de Negócio
 A Rossmann é uma rede de farmácias com 3.000 lojas em 07 países da Europa. Durante uma reunião mensal para apresentação de resultados e acompanhamento de métricas, o CFO informou que as lojas serão reformadas e, para saber quanto destinar de orçamento para cada loja, ele gostaria da previsão de vendas de cada loja para as próximas 06 semanas. 
 
-Como Cientista de Dados da companhia, fui encarregado de elaborar essa previsão de vendas, e informarei ao CFO a previsão de vendas de cada loja através de um Bot no Telegram. 
+Diante disso, fui encarregado de elaborar essa previsão de vendas, e informarei ao CFO a previsão de vendas de cada loja através de um Bot no Telegram. 
 
 # 02. Premissas de Negócio
 - As variáveis/atributos originais (e seus significados) do conjunto de dados são:
