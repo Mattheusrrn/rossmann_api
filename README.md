@@ -76,6 +76,7 @@ O Modelo de Machine Learning adotado previu um cenário-base com uma receita bru
 # 07. Bot no Telegram
 Demonstração da interação com o Bot para verificar a previsão de vendas por loja:
 ![rossman_bot](https://github.com/Mattheusrrn/rossmann_api/blob/main/0ddecc82-359b-4cec-b802-34420d8b6f16.jpeg)
+
 Para mais detalhes do código para fazer o bot acesse: ![rossman](https://github.com/Mattheusrrn/rossman_telegram_bot)
 
 # 08. Conclusões
